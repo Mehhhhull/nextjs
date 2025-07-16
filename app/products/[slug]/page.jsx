@@ -1,6 +1,7 @@
 import React from 'react'
-
-const page = () => {
+import { products } from '../../data'
+const page = ({ params: { slug } }) => {
+  console.log("printing the slug=",slug)
   return (
     <div>
       <h1>Welcome to dynamic route</h1>

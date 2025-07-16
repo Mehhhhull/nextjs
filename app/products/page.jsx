@@ -11,6 +11,7 @@ const page = () => {
       {id: 3, title: "cameras"},
       {id: 4, title: "earbuds"},
       {id: 5, title: "tvs"},
+      
   ]
   return (
     <div>
@@ -21,7 +22,7 @@ const page = () => {
 
       {products.map((product) => <ul key={product.id}>
       <li>
-        <Link href={"/products"}>{product.title}</Link>
+        <Link href={`/products/${product.title}`}>{product.title}</Link>
       </li>
       </ul>)}
     </div>
